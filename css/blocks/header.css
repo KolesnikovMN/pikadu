@@ -1,0 +1,131 @@
+.header {
+    background-color: #fa8c16;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+}
+
+.header-wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    margin-left: 60px;
+    margin-right: auto;
+}
+
+.header-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-menu-link {
+    text-decoration: none;
+    color: #fafafa;
+    margin-right: 15px;
+    font-style: 14px;
+    line-height: 22px;
+}
+
+.input-group {
+    max-width: 237px;
+    width: 60%;
+    height: 32px;
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.search-input {
+    border: none;
+    width: 80%;
+    height: 100%;
+    padding-left: 12px;
+}
+
+.search-button {
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input::-moz-placeholder {
+    color: #bfbfbf;
+    /* Цвет подсказывающего текста */
+}
+
+.search-input::-webkit-input-placeholder {
+    color: #bfbfbf;
+}
+
+.search-input:-ms-input-placeholder {
+    color: #bfbfbf;
+}
+
+.search-input::-ms-input-placeholder {
+    color: #bfbfbf;
+}
+
+.search-input::placeholder {
+    color: #bfbfbf;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 990px) {
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        margin-left: 12px;
+    }
+
+    .menu-toggle span {
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .header {
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-menu {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
